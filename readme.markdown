@@ -1,9 +1,9 @@
-# Jester
+# 🃏 Jester 🃏
+
+> :warning: **Critical bug**: HttpBeast (which is used by default by Jester) [currently has a bug](https://github.com/dom96/jester/issues/248) where data from one request may be sent in response to another request under specific circumstances, until this is fixed consider compiling your Jester application with ``-d:useStdLib`` in order to make use of ``asynchttpserver`` instead which does not have this bug.
 
 The sinatra-like web framework for Nim. Jester provides a DSL for quickly
 creating web applications in Nim.
-
-**Note:** Starting with Jester 0.3.0, a devel version of Nim is required.
 
 ```nim
 # example.nim
